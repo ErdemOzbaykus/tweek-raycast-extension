@@ -10,8 +10,6 @@
 type ExtensionPreferences = {
   /** Tweek Personal API Key / Access Token - Generate your Personal API Key in Tweek → Profile → API Settings. */
   "apiKey": string,
-  /** Tweek MCP Endpoint (Optional) - Optional MCP Server URL (defaults to https://tweek.so/mcp when using MCP transport, or https://tweek.so/api/v1 for REST). */
-  "mcpEndpoint": string,
   /** Default Calendar Name or ID - Optional name or ID of your preferred default calendar. Leave empty to use your primary Tweek calendar. */
   "defaultCalendar": string,
   /** Hide Completed Tasks - Whether to hide completed tasks by default in the Dashboard and Search views. */
@@ -45,7 +43,7 @@ declare namespace Arguments {
   export type Dashboard = {}
   /** Arguments passed to the `ask-tweek` command */
   export type AskTweek = {
-  /** Bugün ve bu hafta hangi görevlerim var? */
+  /** What's on my plate this week? */
   "prompt": string
 }
   /** Arguments passed to the `quick-add` command */
