@@ -18,6 +18,8 @@ type ExtensionPreferences = {
   "dateFormat": "dd/MM/yyyy" | "MM/dd/yyyy",
   /** Week Starts On - First day of the week for weekly views and filters. */
   "weekStartsOn": "Monday" | "Sunday",
+  /** Dashboard View - When enabled, the Tweek Dashboard opens as a monthly calendar instead of the task list. You can still switch to the task list from the calendar. */
+  "defaultToMonthView": boolean,
   /** Default Task Color - Default color badge assigned to newly created tasks. */
   "defaultTaskColor": "blank" | "pink" | "yellowish" | "cornflower" | "mango" | "greenish" | "lilac" | "grey" | "black"
 }
